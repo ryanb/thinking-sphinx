@@ -70,7 +70,7 @@ source #{model.indexes.first.name}_#{index}_core
 type     = #{db_adapter}
 sql_host = #{database_conf[:host] || "localhost"}
 sql_user = #{database_conf[:username]}
-sql_pass = #{database_conf[:password]}
+sql_pass = #{database_conf[:password].gsub('#', '\#')}
 sql_db   = #{database_conf[:database]}
 #{"sql_sock = #{database_conf[:socket]}" unless database_conf[:socket].blank? }
 
