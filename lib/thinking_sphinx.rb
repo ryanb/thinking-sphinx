@@ -13,7 +13,7 @@ require 'thinking_sphinx/search'
 ActiveRecord::Base.send(:include, ThinkingSphinx::ActiveRecord)
 
 Merb::Plugins.add_rakefiles(
-  File.join(File.dirname(__FILE__), "..", "tasks", "thinking_sphinx_tasks")
+  File.join(File.dirname(__FILE__), "thinking_sphinx", "tasks")
 ) if defined?(Merb)
 
 module ThinkingSphinx

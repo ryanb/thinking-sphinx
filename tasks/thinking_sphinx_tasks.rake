@@ -1,1 +1,1 @@
-require File.join(File.dirname(__FILE__), 'thinking_sphinx_tasks')
+require 'thinking_sphinx/tasks'
